@@ -1,6 +1,6 @@
 backend:
-  name: test-repo
-
+  name: github
+  repo: nbrockhoff/nbblog-netlify
 
 media_folder: static/assets
 
