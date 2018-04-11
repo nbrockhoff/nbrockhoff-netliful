@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
-import lotuslogo from '../../images/lotuslogo.svg';
+import genericlogo from '../../images/genericlogo.svg';
 
 
 const HeaderWrapper = styled.div`
@@ -15,7 +15,7 @@ const HeaderWrapper = styled.div`
   height: ${({isHome})=>( isHome ? "70vh" : "20vh"  )};
   h1 {
     img {
-      height: 80px;
+      height: 100px;
     }
   }
 `;
@@ -94,7 +94,7 @@ export default class Header extends Component {
             textDecoration: 'none',
           }}
         >
-          <img src={lotuslogo} alt="lotus logo" />
+          <img src={genericlogo} alt="N.Brockhoff Web Developer logo" />
         </Link>
       </h1>
       <MainNav>
