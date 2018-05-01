@@ -8,14 +8,14 @@ import genericlogo from '../../images/genericlogo.svg';
 
 
 const HeaderWrapper = styled.div`
-  background: #F1F1DC;
+  background: #139c98;
   margin-bottom: 1.45rem;
   overflow: hidden;
   position: relative;
   height: ${({isHome})=>( isHome ? "70vh" : "20vh"  )};
   h1 {
     img {
-      height: 100px;
+      height: 130px;
     }
   }
 `;
@@ -114,7 +114,7 @@ export default class Header extends Component {
       top: 0,
       width: '100%',
       height: '100%',
-      opacity: 0.3,
+      opacity: 0.85,
       }}
     sizes={data.background.sizes} />
   </HeaderWrapper>
