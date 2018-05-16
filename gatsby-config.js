@@ -1,8 +1,16 @@
-export const siteMetadata = {
+module.exports = {
+siteMetadata: {
   title: 'N. Brockhoff',
   desc: 'The web development portfolio of Noelle Brockhoff.'
-};
-export const plugins = [
+},
+plugins: [
+  {
+    resolve: 'gatsby-source-contentful',
+    options: {
+      spaceId: "5zzh32r9cg06",
+      accessToken: "885c5f82b1b3f71d70e39c693737653477c506749ee5cfb4fcca126cadaeb64a"
+    }
+  },
   'gatsby-plugin-react-helmet',
   'gatsby-plugin-styled-components',
   {
@@ -23,13 +31,9 @@ export const plugins = [
       name: "src",
       path: `${__dirname}/static/assets`
     }
-  }, {
-    resolve: 'gatsby-transformer-remark',
-    options: {
-      excerpt_separator: `<!-- end --->`
-    }
-  },
+  }, 
   'gatsby-transformer-sharp',
   'gatsby-plugin-sharp',
-  'gatsby-plugin-netlify-cms'
-];
+  'gatsby-transformer-remark'
+]
+};
